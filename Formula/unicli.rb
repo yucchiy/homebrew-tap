@@ -1,16 +1,16 @@
 class Unicli < Formula
   desc "CLI tool to control Unity Editor from the terminal"
   homepage "https://github.com/yucchiy/UniCli"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/yucchiy/UniCli/releases/download/v#{version}/unicli-osx-arm64.tar.gz"
-      sha256 "f101e7031ac74a2eba34abd299cff8f4373d885ed2047152d17277de338cf2d7"
+      sha256 "90a59d2e33504acb201b52b49873bff33dc1d2840bdd243f0514bcc077ff48f9"
     else
       url "https://github.com/yucchiy/UniCli/releases/download/v#{version}/unicli-osx-x64.tar.gz"
-      sha256 "2353c213e9d2bfa7505369e5001467e2a9fae73c02ee98e253084fa9597e9ff2"
+      sha256 "55f10d7205f9bf424f7d0d47dda6dbce810915c8406c63bcb823bd0f34cfc06e"
     end
   end
 
